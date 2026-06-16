@@ -17,5 +17,42 @@ public class Compression {
     private Long originalSize;
     private Long compressedSize;
     private String compressedFilePath;
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
+
+    public void setFileType(String fileType) {
+        this.fileType = fileType;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setOriginalSize(Long originalSize) {
+        this.originalSize = originalSize;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setCompressedSize(Long compressedSize) {
+        this.compressedSize = compressedSize;
+    }
+
+    public void setCompressedFilePath(String compressedFilePath) {
+        this.compressedFilePath = compressedFilePath;
+    }
+
     private LocalDateTime createdAt = LocalDateTime.now();
 }
